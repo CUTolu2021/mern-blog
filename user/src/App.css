@@ -1,0 +1,448 @@
+*{
+  box-sizing: border-box;
+  }
+
+body{
+  color: #222;
+ }
+
+ img{
+  max-width: 100%;}
+ 
+ main{
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav{
+  display: flex;
+  gap: 30px;
+}
+
+div.post{
+  display: grid;
+  
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+ 
+ div.post div.texts h2{
+  margin: 0;
+  font-size: 1.5rem;
+}
+div.post div.texts a{
+  text-decoration: none;
+  color: inherit;
+}
+
+div.post p.info{
+  margin: 6px 0;
+  color: #222;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+div.post p.info a.author{
+  color: #333;
+  text-decoration: none;
+}
+div.post p.info time{
+  color: #666;
+  font-weight: 300;
+}
+
+div.post p.summary{
+  line-height: 1.4rem;
+  margin: 10px 0;
+}
+
+/*Styling for the form*/
+/* Scoped styles for the login form */
+.wrapper {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 30px; /* Padding around the form */
+  max-width: 400px; /* Maximum width of the form */
+  width: 100%; /* Full width on small devices */
+}
+
+button{
+  cursor: pointer;
+}
+
+/* Form title */
+.wrapper h2 {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333; /* Darker text color */
+}
+
+/* Input fields */
+.wrapper .input-field {
+  position: relative; /* Position relative for label */
+  margin-bottom: 20px; /* Space below each input */
+}
+
+.wrapper .input-field input {
+  width: 100%; /* Full width input */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.wrapper .input-field label {
+  position: absolute; /* Position label over input */
+  left: 10px; /* Position from the left */
+  top: 10px; /* Position from the top */
+  transition: 0.2s; /* Smooth transition */
+  color: #aaa; /* Light gray color */
+}
+
+/* When input is focused or filled */
+.wrapper .input-field input:focus + label,
+.wrapper .input-field input:not(:placeholder-shown) + label {
+  top: -10px; /* Move label up */
+  left: 5px; /* Move label to the left */
+  font-size: 12px; /* Smaller font size */
+  color: #007BFF; /* Change color to blue */
+}
+
+/* Remember me section */
+.wrapper .forget {
+  display: flex; /* Use flex for alignment */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+}
+
+/* Button styles */
+.wrapper button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.wrapper button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Register section */
+.wrapper .register {
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above */
+}
+
+.wrapper .register a {
+  color: #007BFF; /* Blue color for the link */
+  text-decoration: none; /* No underline */
+}
+
+.wrapper .register a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+ 
+form.login h1, form.register h1{
+  text-align: center;
+}
+
+.create-post-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-post-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-post-form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.create-post-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-post-form input, .create-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-post-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-post-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.post-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.post-header {
+  
+  color: #0e0c0c;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.post-header h1 {
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+.post-header .author {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.post-header .date-created {
+  font-size: 14px;
+  color: #979292;
+}
+
+.post-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  word-wrap: break-word;
+  padding: 20px;
+  text-align: left;
+}
+
+.post-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.post-footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.post-footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-footer .tags {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-footer .comments {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .post-page {
+    margin: 20px auto;
+  }
+  .post-image {
+    height: 200px;
+  }
+}
+
+div.edit-row{
+  text-align: center;
+}
+
+a.edit-btn{
+  text-decoration: none;
+  color: #007BFF;
+  align-self: center;
+}
+
+@media (max-width: 480px) {
+  .post-page {
+    margin: 10px auto;
+  }
+  .post-image {
+    height: 150px;
+  }
+}
+
+a{
+  cursor: pointer;
+}
+
+a svg{
+  height: 24px;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bio {
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.skills li:hover {
+  background-color: #e0e0e0;
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience li {
+  margin-bottom: 20px;
+}
+
+.experience h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.education {
+  margin-bottom: 20px;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education li {
+  margin-bottom: 20px;
+}
+
+.education h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li{  
+  margin-bottom: 10px;
+}
